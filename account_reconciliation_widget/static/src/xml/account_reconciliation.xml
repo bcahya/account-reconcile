@@ -153,7 +153,7 @@
                     <td class="cell_due_date"><t t-esc="state.st_line.date" /></td>
                     <td class="cell_label"><t
                                 t-if="state.st_line.name"
-                                t-esc="state.st_line.name"  
+                                t-esc="state.st_line.name.split(':')[2]"
                             /> <t t-if="state.st_line.amount_currency_str"> (<t
                                     t-esc="state.st_line.amount_currency_str"
                                 />)</t></td>
