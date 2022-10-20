@@ -1630,7 +1630,7 @@ odoo.define("account.ReconciliationModel", function (require) {
             var shift_label = line.st_line.name
             if (shift_label){
                 shift_label = shift_label.split(":")
-                shift_labels = shift_label[shift_label.length-1]
+                shift_label = shift_label[shift_label.length-1]
             }
             var prop = {
                 id: _.uniqueId("createLine"),
